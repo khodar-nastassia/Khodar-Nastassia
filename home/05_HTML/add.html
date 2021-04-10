@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Заполните анкету</h1>
+                    <fieldset>
+                        <legend>Личные данные</legend>
+                        <form action="http://fe.it-academy.by/TestForm.php " name="search" method="get">
+                            <input type="text" name="fname" pattern="^[А-Яа-яЁё]+$" placeholder="Фамилия" maxlength="25" autofocus required> <br> 
+                            <input type="text" name="sname" pattern="^[А-Яа-яЁё]+$" placeholder="Имя" maxlength="20" required> <br> 
+                            <input type="text" name="surname" pattern="^[А-Яа-яЁё]+$" placeholder="Отчество" maxlength="24" required> <br>
+                            <fieldset>
+                                <legend>Паспортные данные</legend>
+                                <input type="text" name="seria" pattern="^[A-Z]{2}+$" placeholder="AA" size="2" required> 
+                                <input type="text" name="number" pattern="^[0-9]{7}+$" placeholder="1234567" size="7" required> <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Дата рождения</legend>
+                                <input type="text" name="year" pattern="^[0-9]{4}+$" placeholder="2000" size="4">  <br>
+                                <select size="1" multiple name="month">
+                                    <option value="01">Январь</option>
+                                    <option value="02">Февраль</option>
+                                    <option value="03">Март</option>
+                                    <option value="04">Апрель</option>
+                                    <option value="05">Май</option>
+                                    <option value="06">Июнь</option>
+                                    <option value="07">Июль</option>
+                                    <option value="08">Август</option>
+                                    <option value="09">Сентябрь</option>
+                                    <option value="10">Октябрь</option>
+                                    <option value="11">Ноябрь</option>
+                                    <option value="12">Декабрь</option>
+                                   </select> <br>
+                                   <input type="number" name="date" value="31" min="1" max="31" step="1">
+                            </fieldset>
+                            <select size="1" multiple name="natio" required>
+                                <option value="by">РБ</option>
+                                <option value="ru">РФ</option>
+                                <option value="ukr">Украина</option>
+                                <option value="pl">РП</option>
+
+                            </select> <br>
+                            Адрес: <br>
+                            <input type="text" name="adress">
+
+                            </form>
+                    </fieldset>
+                <fieldset>
+                    <legend>Интересы</legend>
+                    <fieldset>
+                        <legend>Хобби</legend>
+                        <input type="checkbox" name="fish" value="fish">Рыбалка <br>
+                        <input type="checkbox" name="astro" value="astro">Астрономия <br>
+                        <input type="checkbox" name="dive" value="dive">Дайвинг <br>
+                        <input type="checkbox" name="post" value="post">Марки <br>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Домашние животные</legend>
+                        <select name="pets" size="8" multiple>
+                            <optgroup label="Попугаи">
+                             <option value="r1">Волнистый</option>
+                             <option value="r2">Ара</option>
+                             <option value="r3">Неразлучник</option>
+                            </optgroup>
+                            <optgroup label="Рыба">
+                             <option value="u1">Караси</option>
+                             <option value="u2">Окуни</option>
+                             <option value="u3">Осетр</option>
+                            </optgroup>
+                            <optgroup label="Птицы">
+                                <option value="u1">Стая ворон</option>
+                                <option value="u2">Аист</option>
+                                <option value="u3">Археоптерикс</option>
+                               </optgroup>
+                           </select>
+                    </fieldset>
+                   
+
+                </fieldset>
+                <fieldset>
+                    <legend> Данные для входа и восстановления пороля</legend>
+                    <input type="text" name="login"  pattern="^[A-Za-z]{5,}+$" placeholder="Логин" maxlength="20" required> <br>
+                    <input type="password" name="pass"  pattern="^[A-Za-z]{10,}+$" placeholder="Пороль" maxlength="20" autocomplete="off" required>
+            </fieldset>
+            <fieldset>
+                <legend> Координаты</legend>
+                <input type="email" name="email" placeholder="Введите адре почты" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required> <br>
+                <input type="url" name="url"  pattern="https://.*" size="30" placeholder="Введите адре сайтаы"  required>
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" name="num"  min="-2.5" max="2.5" step="0.1"><br>
+            <input type="range" name="range"   min="1" max="10">
+    </fieldset>
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" name="out" value="Отправить">
+        <input type="reset" name="reset" value="Сбросить"> <br>
+        <button><img src="email.jpg" alt="letter"></button>
+</fieldset>
+</body>
+</html>
