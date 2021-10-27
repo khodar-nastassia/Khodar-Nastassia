@@ -1,0 +1,19 @@
+.navigation {width: 15em;
+background-color: dimgray;
+float:left;
+}
+.article {
+    background-color: rgb(80, 79, 79);
+    margin-bottom: 2em;
+    width: ;
+}
+.all {background-color: rgb(226, 222, 222);}
+.footer {height: fit-content;
+background-color: grey;
+clear: both;}
+.img {
+    float: right;
+}
+.clear{
+    clear: both;
+}
